@@ -1,0 +1,24 @@
+<div>
+    <h2>Lista de Usuarios</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.email }}</td>
+          <td>
+            <button [routerLink]="['/users/profile', user.id]">Ver Perfil</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

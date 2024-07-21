@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let supplier of suppliers">
+      <td>{{ supplier.id }}</td>
+      <td>{{ supplier.name }}</td>
+      <td>
+        <button (click)="deleteSupplier(supplier.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

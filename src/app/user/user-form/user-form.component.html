@@ -1,0 +1,15 @@
+<div>
+    <h2>Crear Usuario</h2>
+    <form (ngSubmit)="saveUser()">
+      <label>
+        Nombre:
+        <input type="text" [(ngModel)]="user.name" name="name" required>
+      </label>
+      <label>
+        Email:
+        <input type="email" [(ngModel)]="user.email" name="email" required>
+      </label>
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+  

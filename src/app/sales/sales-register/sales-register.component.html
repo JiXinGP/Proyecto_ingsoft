@@ -1,0 +1,19 @@
+<div>
+    <h2>Registrar Venta</h2>
+    <form (ngSubmit)="registerSale()">
+      <label>
+        Producto:
+        <input type="text" [(ngModel)]="sale.product" name="product" required>
+      </label>
+      <label>
+        Cantidad:
+        <input type="number" [(ngModel)]="sale.quantity" name="quantity" required>
+      </label>
+      <label>
+        Precio:
+        <input type="number" [(ngModel)]="sale.price" name="price" required>
+      </label>
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+  

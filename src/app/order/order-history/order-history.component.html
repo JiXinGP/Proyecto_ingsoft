@@ -1,0 +1,22 @@
+<div>
+    <h2>Historial de Pedidos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Usuario</th>
+          <th>Fecha</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders">
+          <td>{{ order.id }}</td>
+          <td>{{ order.user.name }}</td>
+          <td>{{ order.date }}</td>
+          <td>{{ order.total }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

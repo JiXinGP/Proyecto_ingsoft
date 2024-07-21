@@ -1,0 +1,11 @@
+<div>
+    <h2>{{ isEdit ? 'Editar Proveedor' : 'Crear Proveedor' }}</h2>
+    <form (ngSubmit)="saveSupplier()">
+      <label>
+        Nombre:
+        <input type="text" [(ngModel)]="supplier.name" name="name" required>
+      </label>
+      <button type="submit">Guardar</button>
+    </form>
+  </div>
+  
